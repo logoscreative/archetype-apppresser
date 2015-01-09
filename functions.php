@@ -34,10 +34,11 @@ function appp_child_replace_title() {
  */
 function archetype_enqueue_bootstrap() {
 
-	if ( !defined('ARCHETYPE_ENQUEUE') ) {
+	// Dequeue default AppPresser files to replace with new ones
 
-		wp_register_style( 'parent-styles', get_template_directory_uri() . '/style.css' );
-		wp_enqueue_style( 'parent-styles' );
+	wp_enqueue_style( 'bootstrap' );
+
+	if ( !defined('ARCHETYPE_ENQUEUE') ) {
 
 		wp_register_style( 'bootstrap-latest', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css' );
 		wp_enqueue_style( 'bootstrap-latest' );
@@ -49,9 +50,6 @@ function archetype_enqueue_bootstrap() {
 		wp_enqueue_style( 'font-awesome' );
 
 	} elseif ( defined('ARCHETYPE_ENQUEUE') && ARCHETYPE_ENQUEUE === 'bower' ) {
-
-		wp_register_style( 'archetype-styles', get_template_directory_uri() . '/style.css' );
-		wp_enqueue_style( 'archetype-styles' );
 
 		wp_register_style( 'archetype-styles', get_stylesheet_directory_uri() . '/assets/dist/css/main.min.css' );
 		wp_enqueue_style( 'archetype-styles' );
