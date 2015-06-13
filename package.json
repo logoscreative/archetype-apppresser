@@ -1,17 +1,17 @@
 {
   "name": "archetype",
-  "version": "1.0.6",
-  "description": "Archetype theme, built as a Genesis Child theme",
+  "version": "1.0.7",
+  "description": "Archetype theme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/logoscreative/archetype-genesis"
+    "url": "https://github.com/logoscreative/archetype"
   },
   "bugs": {
-    "url": "https://github.com/logoscreative/archetype-genesis/issues"
+    "url": "https://github.com/logoscreative/archetype/issues"
   },
   "author": "Logos Creative",
   "homepage": "http://logoscreative.co",
@@ -26,6 +26,6 @@
     "grunt-contrib-watch": "^0.5.3",
     "grunt-imageoptim": "~1.4.1",
     "grunt-recess": "^0.5.1",
-    "grunt-version": "~0.3.0"
+    "grunt-version": "^0.3.3"
   }
 }
